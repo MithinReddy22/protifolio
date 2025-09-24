@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Chen - Creative Developer</title>
+    <title>Ananthula Janu Mishra - Cybersecurity Specialist</title>
     <style>
         * {
             margin: 0;
@@ -34,21 +34,12 @@
             line-height: 1.6;
         }
 
-        .cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            transition: all 0.1s ease;
-            mix-blend-mode: difference;
+        body {
+            cursor: default;
         }
 
-        .cursor.hover {
-            transform: scale(2);
-            background: rgba(99, 102, 241, 0.2);
+        a, button, .project-card, .skill {
+            cursor: pointer;
         }
 
         .noise {
@@ -345,6 +336,9 @@
             overflow: hidden;
             transition: all 0.3s ease;
             position: relative;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card::before {
@@ -353,9 +347,10 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 200px;
+            height: 120px;
             background: var(--gradient);
             opacity: 0.8;
+            z-index: 1;
         }
 
         .project-card:hover {
@@ -364,20 +359,26 @@
         }
 
         .project-content {
-            padding: 2rem;
+            padding: 140px 2rem 2rem 2rem;
             position: relative;
             z-index: 10;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-content h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: white;
+            font-weight: 700;
         }
 
         .project-content p {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 1.5rem;
+            line-height: 1.6;
+            flex: 1;
         }
 
         .project-tech {
@@ -533,13 +534,12 @@
     </style>
 </head>
 <body>
-    <div class="cursor"></div>
     <div class="noise"></div>
     <div class="scroll-indicator"></div>
 
     <nav class="nav">
         <div class="nav-container">
-            <div class="logo">MS</div>
+            <div class="logo">AJM</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -558,8 +558,8 @@
             <div class="floating-element" style="top: 60%; left: 70%;"></div>
         </div>
         <div class="hero-content">
-            <h1>Mohammad Shoaib</h1>
-            <p>Software Development Engineer-I</p>
+            <h1>Ananthula Janu Mishra</h1>
+            <p>Cybersecurity Specialist & Web Developer</p>
             <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
     </section>
@@ -571,18 +571,18 @@
                 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 4rem;">👨‍💻</div>
             </div>
             <div class="about-text reveal">
-                <h3>Crafting Digital Experiences</h3>
-                <p>I'm a passionate full-stack developer with over 2 years of experience creating innovative web applications. My expertise spans modern JavaScript frameworks, cloud architecture, and cutting-edge design principles.</p>
-                <p>When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or mentoring aspiring developers in my community.</p>
+                <h3>Cybersecurity & Development Expert</h3>
+                <p>I'm a passionate B.Tech graduate in Cybersecurity with strong expertise in network security, ethical hacking, identity access management, and web development. With hands-on experience through internships and practical projects, I focus on creating secure digital solutions.</p>
+                <p>My journey combines cybersecurity fundamentals with modern web development skills, allowing me to build applications with security-first approaches and robust protection mechanisms.</p>
                 <div class="skills">
-                    <div class="skill">React</div>
-                    <div class="skill">Node.js</div>
                     <div class="skill">Python</div>
-                    <div class="skill">AWS</div>
-                    <div class="skill">Docker</div>
-                    <div class="skill">GraphQL</div>
-                    <div class="skill">TypeScript</div>
-                    <div class="skill">MongoDB</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Network Security</div>
+                    <div class="skill">Ethical Hacking</div>
+                    <div class="skill">HTML/CSS</div>
+                    <div class="skill">MySQL</div>
+                    <div class="skill">Linux</div>
+                    <div class="skill">Penetration Testing</div>
                 </div>
             </div>
         </div>
@@ -593,52 +593,52 @@
         <div class="projects-grid">
             <div class="project-card reveal">
                 <div class="project-content">
-                    <h3>EcoTrack Analytics</h3>
-                    <p>A comprehensive sustainability tracking platform that helps businesses monitor and reduce their carbon footprint through real-time data visualization and AI-powered insights.</p>
+                    <h3>Credit Card Fraud Detection</h3>
+                    <p>Developed a machine learning model using Random Forest classifier to identify credit card fraud. Analyzed transaction patterns, extracted key features, and improved accuracy in distinguishing legitimate and fraudulent activities with focus on enhancing financial security.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                    <a href="#" class="project-link">View Project →</a>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-content">
-                    <h3>Neural Network Visualizer</h3>
-                    <p>An interactive educational tool that makes machine learning concepts accessible through stunning 3D visualizations and real-time neural network training demonstrations.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Three.js</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">WebGL</span>
                         <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Data Analysis</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
                 </div>
             </div>
             <div class="project-card reveal">
                 <div class="project-content">
-                    <h3>CollabSpace Pro</h3>
-                    <p>A next-generation collaboration platform that seamlessly integrates video conferencing, real-time document editing, and project management in a unified workspace.</p>
+                    <h3>Fraud Information Control System</h3>
+                    <p>Studied dynamic control techniques to analyze and prevent fraud information spreading in mobile social networks. Implemented detection models, information diffusion analysis, and real-time control strategies to enhance security and trust in online platforms.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">WebRTC</span>
-                        <span class="tech-tag">Socket.io</span>
-                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Network Security</span>
+                        <span class="tech-tag">Data Mining</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Social Networks</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
                 </div>
             </div>
             <div class="project-card reveal">
                 <div class="project-content">
-                    <h3>Quantum Commerce</h3>
-                    <p>A revolutionary e-commerce platform leveraging quantum computing algorithms for personalized product recommendations and dynamic pricing optimization.</p>
+                    <h3>Web Development Projects</h3>
+                    <p>Built responsive web applications during internship at YBI Foundation. Gained hands-on experience in front-end and back-end development, working with modern frameworks and implementing secure coding practices throughout the development lifecycle.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">GraphQL</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-content">
+                    <h3>Cybersecurity Analysis</h3>
+                    <p>Completed TATA Cybersecurity Analyst Job Simulation gaining practical knowledge in Identity Access Management (IAM), security strategy assessment, custom IAM solutions, and platform integration with focus on enterprise security frameworks.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">IAM</span>
+                        <span class="tech-tag">Security Assessment</span>
+                        <span class="tech-tag">Risk Analysis</span>
+                        <span class="tech-tag">Compliance</span>
                     </div>
                     <a href="#" class="project-link">View Project →</a>
                 </div>
@@ -652,17 +652,17 @@
                 <h2>Let's Create Something Amazing</h2>
                 <p>Ready to bring your next project to life? I'm always excited to work on innovative solutions that push the boundaries of what's possible.</p>
                 <div class="contact-links">
-                    <a href="mailto:alex@example.com" class="contact-link">
+                    <a href="mailto:ananthulajanumishra03@gmail.com" class="contact-link">
                         📧 Email Me
                     </a>
-                    <a href="#" class="contact-link">
+                    <a href="tel:+916300328087" class="contact-link">
+                        📱 +91 6300328087
+                    </a>
+                    <a href="https://www.linkedin.com/in/ananthula-janu" class="contact-link">
                         💼 LinkedIn
                     </a>
                     <a href="#" class="contact-link">
                         🐙 GitHub
-                    </a>
-                    <a href="#" class="contact-link">
-                        🐦 Twitter
                     </a>
                 </div>
             </div>
@@ -670,24 +670,13 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; 2025 Alexander Chen. Crafted with passion and cutting-edge technology.</p>
+        <p>&copy; 2025 Ananthula Janu Mishra. Crafted with passion and cutting-edge technology.</p>
     </footer>
 
     <script>
-        const cursor = document.querySelector('.cursor');
         const nav = document.querySelector('.nav');
         const scrollIndicator = document.querySelector('.scroll-indicator');
         
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX - 10 + 'px';
-            cursor.style.top = e.clientY - 10 + 'px';
-        });
-
-        document.querySelectorAll('a, button, .project-card, .skill').forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-        });
-
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -789,5 +778,3 @@
     </script>
 </body>
 </html>
-
-
